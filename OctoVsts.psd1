@@ -30,7 +30,7 @@
     Copyright = '(c) Chris Klein, All rights reserved.'
     
     # Description of the functionality provided by this module
-    # Description = 'Briges the VSTS build functionality to the Octopus Deploy deployment functionality on the command line'
+    Description = 'Bridges the VSTS build functionality to the Octopus Deploy deployment functionality on the command line'
     
     # Minimum version of the Windows PowerShell engine required by this module
     # PowerShellVersion = ''
