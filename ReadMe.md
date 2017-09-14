@@ -22,6 +22,6 @@ Input descriptions for Initialize-OctoVstsDefaults:
 
 ## How to use
 * Publish-Build - Checks VSTS for the latest build in the current build definition and git branch. Waits for the build to complete. If successful will then deploy that build in Octopus to the current environment.
-** Environment: Overrides OctoDefaultEnvironment
-** SourceBranch: Overrides the source branch of the build to check. The default here is the current git repository that publish is executing in.
-** Force: Skips the confirmation before deploying build in Octopus
+  * Environment: Overrides OctoDefaultEnvironment
+  * SourceBranch: Overrides the source branch of the build to check. The default here is the current git repository that publish is executing in.
+  * Force: Skips the confirmation before deploying build in Octopus
