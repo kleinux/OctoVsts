@@ -25,11 +25,17 @@ function Get-RestVsts {
         [Parameter(Mandatory = $true)][Alias("U")]
         [string]$afterProject,
         [Parameter(Mandatory = $true)][Alias("V")]
-        [string]$version
+        [string]$version,
+        [Parameter(Mandatory = $false)][Alias("np")]
+        [switch]
+        [bool]$noProject
     )
     test-environment
     $v = Get-VstsConnection
-    $url = "https://$($v.InstanceName).visualstudio.com/DefaultCollection/$($v.ProjectName)" 
+    $url = "https://$($v.InstanceName).visualstudio.com/DefaultCollection" 
+    if (-not $noProject) {
+        $url += '/'+$v.ProjectName
+    }
     if (-not $afterProject.StartsWith("/")) {
         $url += '/'
     }

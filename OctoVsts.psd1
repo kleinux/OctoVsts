@@ -71,6 +71,7 @@
         'Classes/VstsMetaData.ps1',
         'Modules/ConvertTo-VstsAuthorizationHeader.psm1'
         'Modules/Get-RestVsts.psm1',
+        'Modules/Post-RestVsts.psm1',
         'Modules/Get-VstsBuildDefinitions.psm1',
         'Modules/Set-VstsConnection.psm1',
         'Modules/Get-VstsConnection.psm1',
@@ -87,7 +88,8 @@
         'Modules/Get-RestOcto.psm1',
         'Modules/Initialize-OctoVsts.psm1',
         'Modules/Initialize-OctoVstsDefaults.psm1',
-        'Modules/Publish-Build.psm1'
+        'Modules/Publish-Build.psm1',
+        'Modules/New-PullRequest.psm1'
     )
     
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
@@ -96,6 +98,7 @@
         'Wait-VstsBuild',
         'Get-VstsRepositories',
         'Get-RestVsts',
+        'Post-RestVsts'
         'Get-VstsConnection',
         'Get-VstsBuildDefinitions',
         'Get-VstsRecentBuilds',
@@ -108,7 +111,8 @@
         'Get-RestOcto',
         'Initialize-OctoVsts',
         'Initialize-OctoVstsDefaults',
-        'Publish-Build'
+        'Publish-Build',
+        'New-PullRequest'
     )
     
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.

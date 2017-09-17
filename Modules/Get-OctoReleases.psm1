@@ -1,4 +1,4 @@
-function Get-OctoReleases ([int]$recent = 4, [string]$projectName = 'Home Warranty Enrollment') { 
+function Get-OctoReleases ([int]$recent = 4, [string]$projectName) { 
     
     $repository = Get-OctoRepository
     $project = $repository.Projects.FindByName($projectName)
